@@ -1,0 +1,4 @@
+site_name: Blender Addon Docs
+theme:
+  name: material
+
