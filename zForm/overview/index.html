@@ -668,6 +668,7 @@
 <li>(Optional) Click <strong>Remove</strong> if available to uninstall the addon completely.</li>
 <li>Click <strong>Save Preferences</strong> to confirm the changes.</li>
 </ol>
+<p><img src="/images/zform/uninstall.jpg" alt="Alt text" width="500"></p>
 <h2 id="installing-new-version">Installing New Version</h2>
 <p>If you'd like to upgrade to a new version of zForm, make sure to first uninstall the old version. Then install the new version, close out Blender entirely and re-open.</p>
 <h2 id="user-interface">User Interface</h2>
@@ -679,11 +680,11 @@
 <p><img src="/images/zform/top-header.jpg" alt="Alt text" width="500"></p>
 <h3 id="input-type"><strong>Input Type</strong></h3>
 <p>Choose which type of input you want to use for the original source. Right now there are three options including Image, Video, and Directory for a sequence of images. </p>
-<p><img src="/images/zform/input-type-image.jpg" alt="Alt text" width="300">
+<p><img src="/images/zform/input-type-image.jpg" alt="Alt text" width="450">
 <br>
-<img src="/images/zform/input-type-video.jpg" alt="Alt text" width="300">
+<img src="/images/zform/input-type-video.jpg" alt="Alt text" width="450">
 <br>
-<img src="/images/zform/input-type-directory.jpg" alt="Alt text" width="300"></p>
+<img src="/images/zform/input-type-directory.jpg" alt="Alt text" width="450"></p>
 <p><strong>Image</strong></p>
 <p>Used to work with one single image. </p>
 <p><strong> Video</strong> </p>
@@ -701,11 +702,11 @@
 <p><img src="/images/zform/open-directory.jpg" alt="Alt text" width="300"></p>
 <h3 id="main-features"><strong>Main Features</strong></h3>
 <p>The majority of features are contained within the middle sections. I'll be covering each one in detail.</p>
-<p><img src="/images/zform/main-features.jpg" alt="Alt text" width="300"></p>
+<p><img src="/images/zform/main-features.jpg" alt="Alt text" width="450"></p>
 <h4 id="main-inputs">Main Inputs</h4>
 <p>Provide your depth maps here. If your input type is video, pick the compiled video of the depth maps, and if your input type is Directory choose the directory where all your depth maps are located. </p>
 <p><img src="/images/zform/main-inputs.jpg" alt="Alt text" width="300"></p>
-<p><u>IMPORTANT</u> You do not need to touch the Target Object, it will automatically be assigned after you specify the depth maps. </p>
+<p><strong><u>IMPORTANT</u></strong> You do not need to touch the Target Object, it will automatically be assigned after you specify the depth maps. </p>
 <h4 id="depth-settings">Depth Settings</h4>
 <p>Adjust your depth strength for the displacement map here. The min and max values currently are -10 to 10, but I usually stay under 1 or 2. However if you're wanting to extend depth a lot for something like a tunnel or street alleyway, then perhaps higher depth values are fitting. It's best to experiment a bit. </p>
 <p><img src="/images/zform/depth-settings.jpg" alt="Alt text" width="300"></p>
@@ -734,7 +735,7 @@
 <p>You can now see how it bends the mesh in the example above. What's import to understand is the sphere is controlling where the bend is happending. See what the bend does if you move the sphere to another location. Let's now set the sphere back to the original location.</p>
 <p>Now change the Axis to X instead of Z to see what that does. </p>
 <p><img src="/images/zform/deform-mesh-step-4.jpg" alt="Alt text" width="500"></p>
-<p>Let's change the Axis back to Z and try something else. Change the Deform Type to Taper and move the sphere up on the Z-axis to control the slant of the floor and ceiling. And increase the Factor value up to 0.48.</p>
+<p>Let's change the Axis back to Z and try something else. Change the Deform Type to Taper and move the sphere up on the Z-axis to control the slant of the floor and ceiling. And <strong>increase the Factor value up to 0.48.</strong></p>
 <p><img src="/images/zform/deform-mesh-step-5.jpg" alt="Alt text" width="500"></p>
 <p>This can be useful if you need to adjust the slant of the floor area to be more flat. Now change the Axis to Z while keeping the Deform Type to Taper. You should see something like this.</p>
 <p><img src="/images/zform/deform-mesh-step-6.jpg" alt="Alt text" width="500"></p>
@@ -837,7 +838,7 @@
 <p><img src="/images/zform/results-erase.jpg" alt="Alt text" width="500"></p>
 <p>Lastly, if you ever want to reset to go back to the orininal depth map all you need to do is click on the <strong>Reset</strong> button in the top right. </p>
 <p><img src="/images/zform/reset.jpg" alt="Alt text" width="300"></p>
-<p>I hope these examples help get you started. I'll try to add more examples in the future. </p>
+<p>I hope these examples help get you started. There are several different brushes and display channels you can experiment with. I plan to have more documentation and add more examples in the future for the Paint mode. </p>
 <h4 id="background-removal"><strong>Background Removal</strong></h4>
 <p>There are a few different techniques to remove the entire backside of a mesh and it depends on what the initial mesh looks like to begin with.</p>
 <p>We'll start with the easiest example for this coin. You'll notice that none of the edges of the coin touch any of the outer edges of the mesh. I'll also cover one other example and technique after this one. </p>
