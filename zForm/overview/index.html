@@ -925,12 +925,12 @@
 <p><img src="/images/zform/utility-tools.jpg" alt="Alt text" width="300"></p>
 <h3 id="export-animation">Export Animation</h3>
 <p>A powerful tool that will allow you to export an animated mesh that can be generated from either using the Video or Directory input types. Either one will produce animations with having one mesh per frame in a sequence. What's important to note is for both examples when the mesh changes on each frame it's still one single mesh. </p>
-<p><img src="/images/zform/export-animation.jpg" alt="Alt text" width="300"></p>
+<p><img src="/images/zform/export-animation.jpg" alt="Alt text" width="500"></p>
 <p>There are two steps involed. </p>
 <p><strong>Step 1:</strong> Select the animated mesh object, adjust the start and end frame if needed, and then click on the button named <strong>Convert to Shape Keys</strong>. It can take a little time. This process will convert the entire animation into shape keys for each frame, which is important to do when exporting to GLB/GLTF. </p>
-<p><img src="/images/zform/convert-to-shape-keys.jpg" alt="Alt text" width="300"></p>
+<p><img src="/images/zform/convert-to-shape-keys.jpg" alt="Alt text" width="=300"></p>
 <p><strong>Step 2:</strong> Click on the <strong>Export Animation</strong> button shown. Another window will pop up that will prompt where you want to save the exported file. This step will take longer than the first step and the end result will typically be quite big. </p>
-<p><img src="/images/zform/step-2-export-animation.jpg" alt="Alt text" width="300"></p>
+<p><img src="/images/zform/step-2-export-animation.jpg" alt="Alt text" width="500"></p>
 <p>That's it! After the process is complete you should the file in the specified directory. For testing purposes you can drag the newly exported file back into Blender and see if it works by playing the animation in Blender's timeline. </p>
 <p><u>IMPORTANT:</u> At this time, the feature cannot export each frame's material, but you should be able to re-assign each frame's material back after you import the GLB/GLTF file into another platform. I've successfully tested this importing back into Blender and re-assigning the materials that way...but I haven't tested on other platforms. It's a limitation with using the GLB/GLTF format. Only the first frame's material is exported. I hope to have an improved solution to pack each frame's materials into the exported file, but currently that isn't possible. </p>
 <h2 id="tips-and-tricks">Tips and Tricks</h2>
