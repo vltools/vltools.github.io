@@ -449,6 +449,48 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Texture Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shadowbox-and-box" class="md-nav__link">
+    <span class="md-ellipsis">
+      Shadowbox and Box
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#contrast-brightness-and-saturation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contrast, Brightness, and Saturation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#color-space" class="md-nav__link">
+    <span class="md-ellipsis">
+      Color Space
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depth-map-painting" class="md-nav__link">
+    <span class="md-ellipsis">
+      Depth Map Painting
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
           <li class="md-nav__item">
@@ -612,10 +654,8 @@
 <li>In the list of add-ons, check the box next to your addon's name to enable it.</li>
 <li>(Optional) Click <strong>Save Preferences</strong> to keep the addon enabled for future sessions.</li>
 </ol>
-<p>Here's a quick guide to installing and getting started. Please keep in mind that the user interface has had some changes and enhancements added since this video, but the basics of using the tool are the same.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dvXfncLfa0A" 
-frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-</iframe>
+<p>Here's a quick guide to installing and getting started. Please keep in mind that the user interface has had some changes and enhancements added since this video, but the basics of using the tool are the same. Feel free to watch other videos and tutorials in the Playlist if you like. </p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed?listType=playlist&amp;list=PLGwcOaoVqVLq3ZAyi4ZFD2plNg5Z2gnDo" title="YouTube playlist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <h2 id="uninstall">Uninstall</h2>
 <p>Follow these steps to uninstall zForm:</p>
@@ -718,6 +758,7 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
 <p>As a starting point to help explain things better, here's an example of a robot mesh I generated using a depth map in zForm.</p>
 <p><img src="/images/zform/teture-properties-starting-point.jpg" alt="Alt text" width="500"></p>
 <p>Scroll down to the Texture Properties section. We're first going to covert the three options in the very top icons. The first two options are presets where the mesh will be changed to create a shadowbox and a simple box.  </p>
+<h5 id="shadowbox-and-box">Shadowbox and Box</h5>
 <p>Click on the first option for "Shadowbox". </p>
 <p>You should now see results that look like a shadow box shown in the example below. It leverages the Texture Properties features, but minimizes the steps involved. </p>
 <p><img src="/images/zform/texture-properties-step-3.jpg" alt="Alt text" width="500"></p>
@@ -728,9 +769,10 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
 <p>At the top of Texture Properties click on the "Box" icon and take a look at the results. </p>
 <p><img src="/images/zform/texture-properties-box.jpg" alt="Alt text" width="500"></p>
 <p>You can adjust pretty much anything you want after clicking on the preset. It just helps get you started. Take a look at the values used in Texture properties including the Mapping Extension for Clipping, Crop, and Brightness.</p>
-<p>Now increase the Contrast value up to 2, which will increase the contrasts between the brightest and darkest colors.  </p>
+<h5 id="contrast-brightness-and-saturation">Contrast, Brightness, and Saturation</h5>
+<p>Now increase the Contrast value up to 2.0, which will increase the contrasts between the brightest and darkest colors.  </p>
 <p><img src="/images/zform/texture-properties-contrast.jpg" alt="Alt text" width="500"></p>
-<p>Let's drop the Brightness value down to 1.20 to see what happens. Do you see how it changed the height of the terrain?</p>
+<p>Let's drop the Brightness value down to 1.0 to see what happens. Do you see how it changed the height of the terrain?</p>
 <p><img src="/images/zform/texture-properties-brightness.jpg" alt="Alt text" width="500"></p>
 <p>It's a good time to point out that if you have a color depth map instead of a pure grayscale, try changing the Color Space from Non-Color to sRGB and experiment with adjust the Red, Green, and Blue values in the Multiply RGB section. </p>
 <p><img src="/images/zform/texture-properties-step-8.jpg" alt="Alt text" width="500"></p>
@@ -738,12 +780,64 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
 <p>Also try experimenting with adjusting the Crop values for the Min X and Max X. This altered how my terrain mesh looked shown below, but keep in mind the perfect box will most likely be messed up now. You can always just click on any of the presets again or reset texture property values.  </p>
 <p><img src="/images/zform/texture-properties-step-9.jpg" alt="Alt text" width="500"></p>
 <p>Let's now click on the "Reset" button in Texture Properties to go back to default values. </p>
-<p><strong>Color Space: </strong></p>
-<p>Adjusting Color Space value can sometimes produce big differences in the mesh, while other times not so much. So far it's been a hit or miss for me. I've found more success with changing Color Space options using 16-bit depth maps, but I'm not sure the answer why yet. And to be honest there are times I see no difference at all between options. </p>
+<h5 id="color-space">Color Space</h5>
+<p>Adjusting Color Space value can sometimes produce differences in the mesh, while other times not so much. So far it's been a hit or miss for me. I've found more success with changing Color Space options using 16-bit depth maps, but I'm not sure the answer why yet. And to be honest there are times I see no difference at all between options. </p>
 <p>For example, let's take a look at the differences when using Non-Color and sRGB for this terrain. </p>
 <p><img src="/images/zform/texture-properties-non-color.jpg" alt="Alt text" width="500"></p>
 <p><img src="/images/zform/texture-properties-sRGB.jpg" alt="Alt text" width="500"></p>
 <p>Quite a big difference in results for the rocky ground area. Personally I like using Non-Color more, however it probably depends on the circumstance. </p>
+<h5 id="depth-map-painting">Depth Map Painting</h5>
+<p>One of the newest features released allows you to paint over an existing depth map and manually edit and refine depth maps directly within Blender's texture painting workspace. At any time you can switch back to the original depth map you used as the input. </p>
+<p>As a starting point, enable this feature by checking the box for "Depth Painting". It's important to point out that the feature isn't useable until you've already generated a 3D mesh using zForm's "Apply Depth Map" button. </p>
+<p><img src="/images/zform/paint-mode-1.jpg" alt="Alt text" width="300"></p>
+<p><strong><u>IMPORTANT</u>: </strong>Before trying out the Paint Mode feature, I strongly recommend backing up your original depth maps in an entirely separate directory with the depth maps being referenced in the tool. The reason is at this time, when you go into Paint Mode and edit the depth maps, it's editing the depth maps used as the original input depth maps. And if you end up saving the file, it will prompt you to save over and modify the initial depth maps. </p>
+<p>Once enabled there will be options for Paint Mode, Reset, Display, Strength, and Radius. </p>
+<p><img src="/images/zform/paint-mode-main-features.jpg" alt="Alt text" width="300"></p>
+<p>Now, click on the <strong>Paint Mode</strong> to get started. </p>
+<p><img src="/images/zform/paint-mode-button.jpg" alt="Alt text" width="300"></p>
+<p>You'll be taking into what's called the Image Editor tool in Paint mode. At the bottom you'll see different brushes that can be used and on the right side there's a side-panel where a variety of adjustment options are available. </p>
+<p>If you don't see the side-panel on the right side, <strong>type in the letter "N" on your keyboard</strong> to pull it up. </p>
+<p><img src="/images/zform/paint-mode-user-interface.jpg" alt="Alt text" width="600"></p>
+<p>Next, just to get you comfortable with navigation and using Paint mode, let's exit the Paint mode entirely to go back to the screen we were previously in 3D Viewport. </p>
+<p>To do that, go to the top left and click on the <strong>3D Viewport</strong> option.</p>
+<p><img src="/images/zform/exit-paint-mode.jpg" alt="Alt text" width="600"></p>
+<p><img src="/images/zform/exit-paint-mode-step-2.jpg" alt="Alt text" width="600"></p>
+<p>This will take you back to where we were before. Each time you're finished with working in Paint Mode, this is how you can get back to the main work area in 3D Viewport. </p>
+<p>The three options available for Display, Strength, and Radius can also be adjusted in the Paint mode as well. </p>
+<p><img src="/images/zform/paint-mode-options.jpg" alt="Alt text" width="500"></p>
+<p>For <strong>Display Channel</strong>, this functionality is useful for fine-tuning and inspecting specific aspects of your depth map, such as texture details and transparency. Here's a brief summary of each option:</p>
+<ul>
+<li><strong>Color &amp; Alpha:</strong> Shows the full composite image with both color (RGB) and transparency (alpha) information.</li>
+<li><strong>Color:</strong> Displays only the color channels, ignoring any transparency.</li>
+<li><strong>Alpha:</strong> Reveals just the alpha (transparency) channel as a grayscale image.</li>
+<li><strong>Red, Green, Blue:</strong> Isolates each individual color channel, showing its intensity in a grayscale view.</li>
+</ul>
+<p>Whereas the <strong>Strength</strong> and <strong>Radius</strong> adjustments are specifically for adjust the brush strength and radius. </p>
+<p>Okay, let's try a few brush in Paint mode techniques. <strong>Please keep in mind the techniques I share don't always work...it's a case-by-case basis and really depends on the depth map.</strong></p>
+<p>For the first example, take a look at the unwanted ridgelines in this mesh that can occur sometimes when using 8-bit depth maps for background areas. We're going to use the Fill brush to smooth out the backside and remove those unwanted areas entirely. </p>
+<p><img src="/images/zform/unwanted-ridgelines.jpg" alt="Alt text" width="500"></p>
+<p>The final result for this example looks like this. See how flat the background is? </p>
+<p><img src="/images/zform/fixed-ridgelines.jpg" alt="Alt text" width="500"></p>
+<p>In Paint mode, click on the <strong>Fill</strong> brush.</p>
+<p><img src="/images/zform/fill-brush.jpg" alt="Alt text" width="500"></p>
+<p>Next, start clicking on the outer background area of the depth map where it's very evident it's the background. Try clicking once to start with and then keep clicking. You'll see that each time you click more of the background is being filled until finally it turns completely black. </p>
+<p><img src="/images/zform/fill-with-black.jpg" alt="Alt text" width="500"></p>
+<p>Also, if you have other tiny areas that are separate than the background like the ones called out below, you can try filling those as well. </p>
+<p><img src="/images/zform/fill-tiny-spots.jpg" alt="Alt text" width="500"></p>
+<p>Here's the result. </p>
+<p><img src="/images/zform/fill-all-areas.jpg" alt="Alt text" width="500"></p>
+<p>Next,let's take a look in the 3D Viewport. Remember to switch back in the top left. </p>
+<p>Here are the results. This can be quite effective where the backside of the depth map is distinctively different than the foreground. </p>
+<p><img src="/images/zform/results-fill-brush.jpg" alt="Alt text" width="500"></p>
+<p>Alright, let's try another one. Go back into Paint Mode again and choose the <strong>Erase Hard</strong> brush.</p>
+<p><img src="/images/zform/erase-hard-brush.jpg" alt="Alt text" width="500"></p>
+<p>Try applying the brush around areas of the depth map for objects that are closest to the camera view like this. </p>
+<p><img src="/images/zform/apply-erase-brush.jpg" alt="Alt text" width="500"></p>
+<p>Now go back into 3D Viewport to take a look. We erased parts of the depth map and here's the results for this example. </p>
+<p><img src="/images/zform/results-erase.jpg" alt="Alt text" width="500"></p>
+<p>Lastly, if you ever want to reset to go back to the orininal depth map all you need to do is click on the <strong>Reset</strong> button in the top right. </p>
+<p><img src="/images/zform/reset.jpg" alt="Alt text" width="300"></p>
+<p>I hope these examples help get you started. I'll try to add more examples in the future. </p>
 <h4 id="background-removal"><strong>Background Removal</strong></h4>
 <p>There are a few different techniques to remove the entire backside of a mesh and it depends on what the initial mesh looks like to begin with.</p>
 <p>We'll start with the easiest example for this coin. You'll notice that none of the edges of the coin touch any of the outer edges of the mesh. I'll also cover one other example and technique after this one. </p>
@@ -807,6 +901,7 @@ frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media
 <h2 id="tips-and-tricks">Tips and Tricks</h2>
 <h3 id="my-typical-workflow">My Typical Workflow</h3>
 <p>I begin by expanding all the sections using the expand/collapse feature at the very top right and selecting my Input Type. Then I load the source—whether it's an image, video, or directory—and provide the corresponding depth map under Main Inputs, and change the Mesh View if necessary.</p>
+<p><strong><u>IMPORTANT</u>: </strong> If you plan to use the Paint Mode feature to paint over depth maps, make sure to back up your original depth maps in an entirely separate directory because if you save the .blend files you will be prompted to save over and modify the depth map images. </p>
 <p>As a starting point, I leave all features at their default values so that I can quickly generate the initial mesh. I typically use a <strong>Subdivision Levels value of 7 or 8</strong> to keep performance smooth; I only increase it later if needed, and I drop back to 8 when making further mesh adjustments.</p>
 <p>Once everything is set up, I scroll down to click the <strong>"Apply Depth Map"</strong> button. After the initial 3D mesh is generated, I collapse all sections to focus on fine-tuning individual features. At this stage, I adjust parameters like Depth Strength, tweak the mesh in the Mesh Properties (using the Deform Mesh feature), or use options in the Texture Properties (for example, turning it into a Shadow Box) — working on one section at a time to minimize on-screen clutter.</p>
 <p>Only after everything is ready do I increase the Subdivision Levels above 8, though I often leave it as is. From my experience, if the depth map is in 8-bit, increasing the Depth Strength above 8 can negatively impact the mesh quality by introducing artifacts. I usually increase the Subdivision Levels above 8 only when using a 16-bit depth map.</p>
