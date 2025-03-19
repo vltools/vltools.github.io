@@ -745,7 +745,7 @@
 <p><strong>Subdivision Levels: </strong>Increasing the value will increase the density of the mesh as well as slow down performance the higher the value goes, so please keep that in mind.</p>
 <p>I leave this value at 8 (default) while I'm adjusting other features. Only after everything is ready do I increase the Subdivision Levels above 8, though I often leave it as is. From my experience, if the depth map is in 8-bit, increasing the Depth Strength above 8 can negatively impact the mesh quality by introducing artifacts. I usually increase the Subdivision Levels above 8 only when using a 16-bit depth map.</p>
 <p><strong>Smooth Factor: </strong>Adjusting the Smooth Factor value will smooth the mesh by averaging angles between adjacent faces, but there is a cutoff point where increasing too much can negatively impact the mesh and create artifacts. Most of the time I will stay at 1 and no more than 2. I've been told that you can't use this feature for 3D printing, so you would most likely need to apply all modifiers before exporting the mesh.</p>
-<p><strong>Thickness: </strong>Rarely do I use much thickness because it can sometimes create unwanted artifacts, in fact most of the time I have it set to the default value of 0. That being said, it could still be beneficial if you do need to increase the thickness of the mesh. </p>
+<p><strong>Thickness: </strong>Rarely do I use much thickness because it can sometimes create unwanted artifacts, in fact most of the time I have it set to the default value of 0. That being said, it could still be beneficial especially for adding a little bit of thickness for 3d printing. </p>
 <h5 id="deform-settings">Deform Settings</h5>
 <p>This is a fun one! Make sure to keep the Deform Mesh feature disabled until you've generated the initial 3D mesh. Then, you can start experimenting with this one. At any time you can enable and disable the feature. If you accidentally enabled the Deform Mesh feature before generating the mesh, don't worry. Just disable and enable again. </p>
 <p><img src="/images/zform/deform-mesh.jpg" alt="Alt text" width="400"></p>
@@ -949,6 +949,7 @@
 <h3 id="exporting-mesh"><strong>Exporting Mesh</strong></h3>
 <p>For those using zForm to export meshes with materials, please ensure you disable the "Use Transparency" option in the Material Properties section before export. This step simplifies the material and helps preserve the original image colors.</p>
 <p><img src="/images/zform/disable-transparency.jpg" alt="Alt text" width="300"></p>
+<p>Also make sure to do simple cleanup techniques of the mesh like removing duplicate vertices. </p>
 <h3 id="saving-and-working-with-existings-project-files"><strong>Saving and Working with Existings Project Files</strong></h3>
 <p>I discovered that the “Relative Paths” setting in Blender’s Preferences was causing problems when reusing saved projects. To fix this, please uncheck "Relative Paths" in the Save and Load window in Preferences. </p>
 <p><img src="/images/zform/disable-relative-paths.jpg" alt="Alt text" width="300"></p>
