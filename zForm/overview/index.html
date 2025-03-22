@@ -630,6 +630,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#current-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      Current Issues
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#newest-updates" class="md-nav__link">
     <span class="md-ellipsis">
       Newest Updates
@@ -928,7 +937,9 @@
 <h3 id="export-animation">Export Animation</h3>
 <p>A powerful tool that will allow you to export an animated mesh that can be generated from either using the Video or Directory input types. Either one will produce animations with having one mesh per frame in a sequence. What's important to note is for both examples when the mesh changes on each frame it's still one single mesh. </p>
 <p><img src="/images/zform/export-animation.jpg" alt="Alt text" width="500"></p>
-<p>There are two steps involed. </p>
+<p><u><strong>IMPORTANT</strong> :</u> Make sure to enable the native Blender add-on called glTF 2.0 Format so you can export as GLB/glTF. </p>
+<p><img src="/images/zform/gltf.jpg" alt="Alt text" width="500"></p>
+<p>There are two steps involved. </p>
 <p><strong>Step 1:</strong> Select the animated mesh object, adjust the start and end frame if needed, and then click on the button named <strong>Convert to Shape Keys</strong>. It can take a little time. This process will convert the entire animation into shape keys for each frame, which is important to do when exporting to GLB/GLTF. </p>
 <p><img src="/images/zform/convert-to-shape-keys.jpg" alt="Alt text" width="=300"></p>
 <p><strong>Step 2:</strong> Click on the <strong>Export Animation</strong> button shown. Another window will pop up that will prompt where you want to save the exported file. This step will take longer than the first step and the end result will typically be quite big. </p>
@@ -963,6 +974,10 @@
 </ol>
 <p>Additional Note for zForm Users:
 When reopening an older project in zForm, please note that the Mesh View option defaults to top view. You may need to adjust this setting manually.</p>
+<h2 id="current-issues"><strong>Current Issues</strong></h2>
+<ul>
+<li>In Paint Mode for the Video input type, the Reset feature in Texture Properties isn't functioning correctly for specific frames. It will handle painting just fine for each frame, but resetting a the texture specific frame th</li>
+</ul>
 <h2 id="newest-updates"><strong>Newest Updates</strong></h2>
 <p>Check out all the release and code updates <a href="/zForm/updates/"><strong>here</strong></a></p>
 
