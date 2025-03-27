@@ -607,6 +607,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#how-can-i-remove-the-unwanted-fold-at-the-top-of-the-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      How can I remove the unwanted fold at the top of the image?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#exporting-mesh" class="md-nav__link">
     <span class="md-ellipsis">
       Exporting Mesh
@@ -957,6 +966,11 @@
 <p>The quality of depth maps is very important! I can't stress enough how much the end result of the 3D mesh is dependent on the original depth map created. That being said, there are also times when a lower quality depth map is fine, especially if you're just experimenting and learning how things work. It depends on your needs. But, typically I try to generate higher quality depth maps if I can. </p>
 <p>For the most part, the standard size of depth map resolutions I believe is around 500. For example, using the web platform Hugging Face to generate depth maps will most likely produce a depth map in this resolution size. Whereas if you use a local tool like ComfyUI or other local tools like my other add-on Depth Map Batch, you'll have more control on resolution size to go higher to sizes like 1200 or even 1600 if your computer can handle it. But, they also take more time to generate.</p>
 <p>In an ideal scenario you want to find a tool that can give you control on specifying the resolution size. And if you have the option to also generate <strong>16-bit depth maps</strong>, that will help a lot with banding issues that can happen in the mesh when using <strong>8-bit depth maps</strong>. But, again....it isn't necessary to have these options if you don't have them available. There's plenty you can do to experiment and get a sense of this workflow.  </p>
+<h3 id="how-can-i-remove-the-unwanted-fold-at-the-top-of-the-image"><strong>How can I remove the unwanted fold at the top of the image?</strong></h3>
+<p>Do you want remove this unwanted folding at the top that can happen sometimes when generating the mesh? </p>
+<p><img src="/images/zform/unwanted-folding.jpg" alt="Alt text" width="500"></p>
+<p>The fastest way to do that is go into the Texture Properties section and change the Mapping Extension option to Extend.</p>
+<p><img src="/images/zform/fixed-fold.jpg" alt="Alt text" width="500"></p>
 <h3 id="exporting-mesh"><strong>Exporting Mesh</strong></h3>
 <p>For those using zForm to export meshes with materials, please ensure you disable the "Use Transparency" option in the Material Properties section before export. This step simplifies the material and helps preserve the original image colors.</p>
 <p><img src="/images/zform/disable-transparency.jpg" alt="Alt text" width="300"></p>
