@@ -665,6 +665,15 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#saving-and-working-with-existings-project-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Saving and Working with Existings Project Files
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -888,6 +897,19 @@
 <p>The other possible reason could be you don't have all the libraries installed. Maybe you have most or almost all of them. Even if only one isn't installed, the addon will not show up in the side-panel. </p>
 <h3 id="what-types-of-image-formats-can-i-use-to-generate-depth-maps">What types of image formats can I use to generate depth maps?</h3>
 <p>At this time PNG, JPG, and JPEG</p>
+<h3 id="saving-and-working-with-existings-project-files"><strong>Saving and Working with Existings Project Files</strong></h3>
+<p>I discovered that the “Relative Paths” setting in Blender’s Preferences was causing problems when reusing saved projects. To fix this, please uncheck "Relative Paths" in the Save and Load window in Preferences. </p>
+<p><img src="/images/zform/disable-relative-paths.jpg" alt="Alt text" width="500"></p>
+<p><strong>You can follow these steps:</strong></p>
+<ol>
+<li>Open Blender and go to Edit → Preferences.</li>
+<li>In the Preferences window, navigate to the Save And Load section.</li>
+<li>Uncheck the "Relative Paths" option in the Default To section.</li>
+<li>In the bottom left of the Preferences window, click on the hamburger icon to save your preferences.</li>
+<li>This change will be saved for all future project files. If you ever need to revert to the previous behavior, simply re-check the "Relative Paths" option.</li>
+</ol>
+<p>Additional Note for zForm Users:
+When reopening an older project in zForm, please note that the Mesh View option defaults to top view. You may need to adjust this setting manually.</p>
 <h2 id="newest-updates"><strong>Newest Updates</strong></h2>
 <p>Check out all the release and code updates <a href="/DepthMapBatch/updates/"><strong>here</strong></a></p>
 
