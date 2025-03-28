@@ -9,6 +9,8 @@
       
       
       
+        <link rel="prev" href="../../zForm/overview/">
+      
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -16,7 +18,7 @@
     
     
       
-        <title>Depth Map Batch (DMB) Documentation - Addons by Viz Life Studio</title>
+        <title>Depth Map Batch - Addons by Viz Life Studio</title>
       
     
     
@@ -96,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Depth Map Batch (DMB) Documentation
+              Depth Map Batch
             
           </span>
         </div>
@@ -188,6 +190,25 @@
   
 
       
+        
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+    
+  
+  Depth Map Batch
+
+      </a>
+    </li>
+  
+
+      
     </ul>
   </div>
 </nav>
@@ -271,6 +292,401 @@
   
 
     
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Depth Map Batch
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Depth Map Batch
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#intro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Intro
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#video-tutorials" class="md-nav__link">
+    <span class="md-ellipsis">
+      Video Tutorials
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-add-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Add-On
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-python-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install Python Packages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#install-gpu-packages" class="md-nav__link">
+    <span class="md-ellipsis">
+      Install GPU Packages
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uninstall-add-on" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uninstall Add-on
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upgrading-to-new-version-of-dmb" class="md-nav__link">
+    <span class="md-ellipsis">
+      Upgrading to new version of DMB
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#user-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      User Interface
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="User Interface">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inputs" class="md-nav__link">
+    <span class="md-ellipsis">
+      Inputs
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Inputs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#input-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input Method
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#batch-size" class="md-nav__link">
+    <span class="md-ellipsis">
+      Batch Size
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input Source
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depth-map-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Depth Map Options
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Depth Map Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#enable-gpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enable GPU
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depth-map-style" class="md-nav__link">
+    <span class="md-ellipsis">
+      Depth Map Style
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-weights" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Weights
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#model-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Model Options
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Output Settings
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Output Settings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#output-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      Output Directory
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resize-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      Resize Options
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image Format
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#output-type" class="md-nav__link">
+    <span class="md-ellipsis">
+      Output Type
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#start" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#last-run-results" class="md-nav__link">
+    <span class="md-ellipsis">
+      Last Run Results
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#utility-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      Utility Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Utility Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#compile-video" class="md-nav__link">
+    <span class="md-ellipsis">
+      Compile Video
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq-and-tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      FAQ and Tips
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="FAQ and Tips">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-use-16-bit" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to use 16-bit
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-are-the-benefits-and-drawbacks-of-using-16-bit" class="md-nav__link">
+    <span class="md-ellipsis">
+      What are the benefits and drawbacks of using 16-bit?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#gpu-how-can-i-generate-depth-maps-using-gpu-instead-of-cpu" class="md-nav__link">
+    <span class="md-ellipsis">
+      GPU - How can I generate depth maps using GPU instead of CPU?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-dont-i-see-dmb-show-up-in-the-side-panel-menu" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why don't I see DMB show up in the side-panel menu?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-types-of-image-formats-can-i-use-to-generate-depth-maps" class="md-nav__link">
+    <span class="md-ellipsis">
+      What types of image formats can I use to generate depth maps?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#newest-updates" class="md-nav__link">
+    <span class="md-ellipsis">
+      Newest Updates
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -288,7 +704,192 @@
 
 
 <h1 id="depth-map-batch-dmb-documentation">Depth Map Batch (DMB) Documentation</h1>
-<h2 id="coming-soon"><strong>Coming soon!</strong></h2>
+<h2 id="intro"><strong>Intro</strong></h2>
+<p>This page is dedicated to documentation support for Depth Map Batch (DMB), a Blender add-on designed to create depth maps from a batch of images in a specified directory, video file, or a single image using efficient batch processing, and it's run entirely locally on your own machine without relying on external APIs or websites. You also have the ability to generate normal maps, height maps, extract original frames from video files, and a video compiler feature.</p>
+<p>There are currently 4 different depth map models to choose from including Depth Anything V2 (Small, Base, Large), MiDaS 3.1, Depth Pro, and MiDaS 3.0. You also have the ability to generate 16-bit depth maps for 8-bit images, max resolution size options ranging from 256 and up to 1600 if your machine can handle it, maintain DPI settings throughout the generation process, and keep transparency. </p>
+<h2 id="video-tutorials"><strong>Video Tutorials</strong></h2>
+<table>
+<thead>
+<tr>
+<th><strong>Title</strong></th>
+<th><strong>Description</strong></th>
+<th><strong>Video Link</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Quick Getting Started Guide</strong></td>
+<td>A quick guide to help you get started.</td>
+<td><a href="https://www.youtube.com/watch?v=E4hkXFAte88&feature=youtu.be" target="_blank">Quick Getting Started Guide (click here)</a></td>
+</tr>
+<tr>
+<td><strong>Playlist of Tutorials</strong></td>
+<td>Here's where you can go to see all the latest tutorials.</td>
+<td><a href="https://www.youtube.com/playlist?list=PLGwcOaoVqVLpdcymabECBBkPEiVyFAQo6" target="_blank">All Tutorials (click here)</a></td>
+</tr>
+<tr>
+<td><strong>Installing the add-on</strong></td>
+<td>Steps to install the add-on.</td>
+<td><a href="https://www.youtube.com/watch?si=lo3skr1bF7nDDbNb&v=k97fOj8659g&feature=youtu.be" target="_blank">Installing add-on (click here)</a></td>
+</tr>
+<tr>
+<td><strong>Installing dependencies</strong></td>
+<td>Guide to installing necessary dependencies.</td>
+<td><a href="https://www.youtube.com/watch?v=X1eELz39EV4&feature=youtu.be" target="_blank">Installing dependencies (click here)</a></td>
+</tr>
+<tr>
+<td><strong>Referencing model weights</strong></td>
+<td>How to reference the model weights file.</td>
+<td><a href="https://www.youtube.com/watch?v=QCJ_SBnRtzA" target="_blank">How to reference model weights file (click here)</a></td>
+</tr>
+<tr>
+<td><strong>Depth Map Styles</strong></td>
+<td>Explanation of using Depth Map Styles.</td>
+<td><a href="https://www.youtube.com/watch?v=1s1QCg-gZ2E" target="_blank">Using Depth Map Styles (click here)</a></td>
+</tr>
+<tr>
+<td><strong>Uninstalling Python packages</strong></td>
+<td>Steps to uninstall Python packages.</td>
+<td><a href="https://www.youtube.com/watch?v=b_MeyPJ0kcU" target="_blank">Uninstalling (click here)</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="install-add-on"><strong>Install Add-On</strong></h2>
+<p>Follow these steps to install Depth Map Batch in Blender:</p>
+<ol>
+<li><strong>Open Blender</strong></li>
+<li>Go to <strong>Edit &gt; Preferences</strong>.</li>
+<li>Select the <strong>Add-ons</strong> tab.</li>
+<li>Click the <strong>Install from Disk</strong> in the dropdown icon at the top right. </li>
+</ol>
+<p><img src="/images/dmb/install.jpg" alt="Alt text" width="500"></p>
+<p><img src="/images/dmb/install-from-disk.jpg" alt="Alt text" width="500"></p>
+<p>Navigate to and select the downloaded addon ZIP file, then click <strong>Install Add-on</strong>. There is one version for <strong>Windows</strong> and a separate version for <strong>Mac/Linux</strong>, so make sure to choose the right version for your operating system.</p>
+<p>In the list of add-ons, check the box next to your addon's name to enable it.</p>
+<p><img src="/images/dmb/enable-addon.jpg" alt="Alt text" width="500"></p>
+<p>(Optional) Click <strong>Save Preferences</strong> to keep the addon enabled for future sessions.</p>
+<p><img src="/images/dmb/save-preferences-1.jpg" alt="Alt text" width="500"></p>
+<p><img src="/images/dmb/save-preferences.jpg" alt="Alt text" width="500"></p>
+<h2 id="install-python-packages"><strong>Install Python Packages</strong></h2>
+<p>Now, expand out the add-on for Depth Map Batch and find the button that says "Install All Packages".  This will allow you to install all dependency libraries in one click. Please give it some time as it could take 3-5 minutes depending on your machine and internet connection.</p>
+<p><img src="/images/dmb/install-packages.jpg" alt="Alt text" width="500"></p>
+<p>Once you've installed all the library packages, close out Blender entirely so that Blender can recognize you have all the libraries ready to go. The add-on will not show up in the side panel unless all required libraries are installed first. </p>
+<p>You can always verify if all packages are installed by going into the add-on in the Preferences window and scrolling down to confirm all libraries say "Uninstall". </p>
+<p><img src="/images/dmb/list-of-libraries.jpg" alt="Alt text" width="500"></p>
+<h2 id="install-gpu-packages"><strong>Install GPU Packages</strong></h2>
+<p><img src="/images/dmb/install-gpu.jpg" alt="Alt text" width="500"></p>
+<h2 id="uninstall-add-on"><strong>Uninstall Add-on</strong></h2>
+<p><img src="/images/dmb/uninstall.jpg" alt="Alt text" width="500"></p>
+<p>Follow these steps to uninstall zForm:</p>
+<ol>
+<li>Open <strong>Blender 4.3</strong>.</li>
+<li>Go to <strong>Edit &gt; Preferences</strong>.</li>
+<li>Select the <strong>Add-ons</strong> tab.</li>
+<li>Locate zForm in the list (you can use the search bar to search for "zForm").</li>
+<li>Uncheck the box next to the addon’s name to disable it.</li>
+<li>(Optional) Click <strong>Remove</strong> if available to uninstall the addon completely.</li>
+<li>Click <strong>Save Preferences</strong> to confirm the changes.</li>
+</ol>
+<p><u><strong>IMPORTANT</strong></u>: You don't need to uninstall the Python library packages each time you upgrade to a new version of Depth Map Batch. They can be left as is. All you need to do is uninstall the actual add-on itself. </p>
+<p><img src="/images/dmb/uninstall.jpg" alt="Alt text" width="500"></p>
+<h2 id="upgrading-to-new-version-of-dmb"><strong>Upgrading to new version of DMB</strong></h2>
+<p>If you'd like to upgrade to a new version of Depth Map Batch, make sure to first uninstall the old version. Then install the new version, close out Blender entirely and re-open.</p>
+<p><u><strong>IMPORTANT</strong>: </u>You don't need to uninstall python library packages, only uinstalling the actual add-on itself.</p>
+<h2 id="user-interface"><strong>User Interface</strong></h2>
+<p>There are five main sections in Depth Map Batch including Inputs, Depth Map, Output Settings, Start, and Utility Tools. There is also another section called Last Run Results, but that isn't critical.</p>
+<p><img src="/images/dmb/main-sections.jpg" alt="Alt text" width="500"></p>
+<h3 id="inputs"><strong>Inputs</strong></h3>
+<p>Inputs is where you will specify what type of inputs you're providing to produce depth maps, whether it be a single image, video, or a directory of images. </p>
+<p><img src="/images/dmb/inputs.jpg" alt="Alt text" width="500"></p>
+<h4 id="input-method"><strong>Input Method</strong></h4>
+<p>There are three options for Input Method including Single Image, Video, and Directory. Currently it defaults to Directory if you don't specify. Currently only PNG, JPG, and JPEG are accepted image formats. </p>
+<p><img src="/images/dmb/input-method.jpg" alt="Alt text" width="500"></p>
+<h4 id="batch-size"><strong>Batch Size</strong></h4>
+<p>Batch Size gives you the ability to increase how many parallel processes you want to run at one time to generate depth maps. This is always defaulted to 1, but if you have a powerful machine you could experiment increasing the batch size higher. Increasing the batch size makes it more difficult to stop processes early.</p>
+<p><img src="/images/dmb/batch-size.jpg" alt="Alt text" width="500"></p>
+<p>I wouldn't recommend going higher than 3-5 unless you've got a top tier machine. And increasing the batch size doesn't always mean it will produce faster....there needs to be a balance that you'll need to experiment for yourself. </p>
+<p>In my workflow I almost always leave to 1.</p>
+<h4 id="input-source"><strong>Input Source</strong></h4>
+<p>The Input Source is the actual image, video, or directory that will be used to generate depth maps for. Make sure if you're using an image or video to double click on the file just in case. </p>
+<p><img src="/images/dmb/input-source.jpg" alt="Alt text" width="500"></p>
+<h3 id="depth-map-options"><strong>Depth Map Options</strong></h3>
+<p><img src="/images/dmb/depth-map-options.jpg" alt="Alt text" width="500"></p>
+<h4 id="enable-gpu"><strong>Enable GPU</strong></h4>
+<p>By default, GPU is enabled which means if your machine is set up correctly to generate depth maps levaraging GPU performance, it will do so. But, if your machine doesn't have the necesseary python packages to run GPU, even if your machine has GPU, it will revert back to using CPU.</p>
+<p>For those that don't have GPU machines it will just use CPU and there's nothing you need to adjust here. </p>
+<p><strong>IMPORTANT</strong>: If your machine is set up to use GPU, but you prefer CPU, make sure to uncheck this option before running Depth Map Batch for the first time in an opened file.</p>
+<p><img src="/images/dmb/enable-gpu.jpg" alt="Alt text" width="500"></p>
+<h4 id="depth-map-style"><strong>Depth Map Style</strong></h4>
+<p>There are twenty different depth map styles, three of which are pure grayscale including CLOSE_WHITE, 16_BIT, and CLOSE_BLACK. </p>
+<p>Most of the time I will use either CLOSE_WHITE or 16_BIT. But on occasion I might use one of the other color depth map styles for aesthetic purposes to visually show what depth maps look like, or to control RGB colors in texture properties of a displacement map. </p>
+<p>I rarely use CLOSE_BLACK, but it's there for those that prefer that objects closest to the camera view are black and those furthest away being white. </p>
+<p><img src="/images/dmb/depth-map-style.jpg" alt="Alt text" width="500"></p>
+<h4 id="model-weights"><strong>Model Weights</strong></h4>
+<p>A critical section. The directory path you choose in this option is where you've placed all of your model weights files. I recommend saving the model weights files in a directory that's easy to remember for future reference.</p>
+<p><img src="/images/dmb/model-weights.jpg" alt="Alt text" width="500"></p>
+<p>Then, once you've specified the directory you can choose which model to use in the dropdown. The only model options displayed are those that you've got model weights files in the directory. </p>
+<p><img src="/images/dmb/select-model.jpg" alt="Alt text" width="500"></p>
+<h4 id="model-options"><strong>Model Options</strong></h4>
+<p>The Model Options section is only used for Depth Anything V2 models to specify the Max Resolution size you want to use for the image being passed into the model. The larger the resolution size the longer it takes, but will typically also produce better quality depth maps.</p>
+<p>Max resolution options go from 256 up to 1600 depending on if your machine can handle it.</p>
+<p>I rarely go above 1200. If I'm generating depth maps for a sequence of frames for a video that might be 200-500 frames, I will use lower max resolution sizes because of the time it takes to generate depth maps.</p>
+<p><img src="/images/dmb/model-options.jpg" alt="Alt text" width="500"></p>
+<h3 id="output-settings"><strong>Output Settings</strong></h3>
+<p><img src="/images/dmb/output-settings.jpg" alt="Alt text" width="500"></p>
+<h4 id="output-directory"><strong>Output Directory</strong></h4>
+<p>The Output Directory section is where to save the depth maps. </p>
+<p><img src="/images/dmb/output-directory.jpg" alt="Alt text" width="500"></p>
+<p>If you would like to save depth maps in the same location as the input directory, just enable the <strong>Use Input Directory</strong> option. </p>
+<p><img src="/images/dmb/use-input-directory-2.jpg" alt="Alt text" width="500"></p>
+<h4 id="resize-options"><strong>Resize Options</strong></h4>
+<p>By default, the image size is set to be the same dimensions as the original input files. At any time you can adjust relative or absolute size. </p>
+<p><strong>IMPORTANT</strong>: 16-bit depth map generations are only possible when you maintain the original image sizes of input files. </p>
+<p><img src="/images/dmb/resize-options.jpg" alt="Alt text" width="500"></p>
+<h4 id="image-format"><strong>Image Format</strong></h4>
+<p>By default, the image format is PNG for depth map generations to keep the highest quality. But you also have the option to choose JPG, or instead generate both PNG and JPG. </p>
+<p><img src="/images/dmb/image-format.jpg" alt="Alt text" width="500"></p>
+<h4 id="output-type"><strong>Output Type</strong></h4>
+<p>By default, the only option selected in Output Type is <strong>Depth Maps</strong>, but there are many other options. If you choose <strong>All Types</strong> it will generate and save images for all types listed.  </p>
+<p>If you only want to produce height maps or normal maps based on the original input files that's an option as well. The <strong>Original Frames/Images</strong> will extract individual frames of a video file. </p>
+<p><img src="/images/dmb/output-type.jpg" alt="Alt text" width="500"></p>
+<h3 id="start"><strong>Start</strong></h3>
+<p>The last step is clicking the <strong>Start</strong> button. Once that's clicked on the entire process will start and you'll be able to monitor progress. </p>
+<p><img src="/images/dmb/start.jpg" alt="Alt text" width="500"></p>
+<h3 id="last-run-results"><strong>Last Run Results</strong></h3>
+<p>If you want to view stats on the last process run time expand out this section. </p>
+<p><img src="/images/dmb/last-run-time.jpg" alt="Alt text" width="500"></p>
+<h3 id="utility-tools"><strong>Utility Tools</strong></h3>
+<p>In the Utility Tools section, all tools are independent of what's being processed for depth maps. These are tools purely to help with workflows. At the moment there is only one tool to compile a directory of images in a directory, like a sequence of frames of a video, into an actual .mp4 file.</p>
+<p><img src="/images/dmb/utility-tools.jpg" alt="Alt text" width="500"></p>
+<h4 id="compile-video"><strong>Compile Video</strong></h4>
+<p>Steps are pretty straightforward. </p>
+<ol>
+<li>Specify the directory where all the images are located</li>
+<li>Specify the output directory where to save the .mp4 file</li>
+<li>Name the file in <strong>Output Filename</strong> section</li>
+<li>Click on <strong>Compile Video</strong></li>
+</ol>
+<p><img src="/images/dmb/compile-video-4.jpg" alt="Alt text" width="500"></p>
+<h2 id="faq-and-tips"><strong>FAQ and Tips</strong></h2>
+<h3 id="how-to-use-16-bit">How to use 16-bit</h3>
+<p>To generate 16-bit depth maps you need to ensure two things, one is choosinge one of the Depth Anything V2 model weights options, and the other is selecting the 16_BIT depth map style. </p>
+<p><img src="/images/dmb/16-bit.jpg" alt="Alt text" width="500"></p>
+<h3 id="what-are-the-benefits-and-drawbacks-of-using-16-bit">What are the benefits and drawbacks of using 16-bit?</h3>
+<p>One of the most unique features for DMB is the ability to generate 16-bit depth maps for 8-bit images, which is difficult to find as a feature in other tools or platforms out there. The biggest benefit of using 16-bit depth maps is the ability to minimize unwanted banding that can occur in 8-bit depth maps as well as be capable of handling higher Subdivision Levels in the mesh to produce more detail without unwanted artifacts. </p>
+<p>This can be beneficial for use-cases like 3D printing or for more accurate camera lighting effects.</p>
+<p>There is one drawback that I've experienced though, which is the true depth isn't as good as 8-bit typically. </p>
+<h3 id="gpu-how-can-i-generate-depth-maps-using-gpu-instead-of-cpu">GPU - How can I generate depth maps using GPU instead of CPU?</h3>
+<p>In the add-on within the Preferences window, scroll down to the very bottom and make sure you have the required Python packages to run GPU for depth map generation. If this section already shows "Uninstall" that means you should be ready to go. But, if it says "Install" that means you still need to install the necessary packages. The packages depend on the operating system. </p>
+<p><img src="/images/dmb/install-gpu.jpg" alt="Alt text" width="500"></p>
+<p>Then, make sure you have the "Enable GPU if available" is check on. </p>
+<p><img src="/images/dmb/enable-gpu.jpg" alt="Alt text" width="500"></p>
+<h3 id="why-dont-i-see-dmb-show-up-in-the-side-panel-menu">Why don't I see DMB show up in the side-panel menu?</h3>
+<p>The add-on will only show up in the side-panel if all necessary library packages are installed, otherwise you will only be able to see the add-on in the Preferences window. It's very possible you didn't close out Blender entirely after installing the packages for the first time, which is important. Otherwise it won't show for the first time in the side-panel until that very first time of closing and reopening Blender. </p>
+<p>The other possible reason could be you don't have all the libraries installed. Maybe you have most or almost all of them. Even if only one isn't installed, the addon will not show up in the side-panel. </p>
+<h3 id="what-types-of-image-formats-can-i-use-to-generate-depth-maps">What types of image formats can I use to generate depth maps?</h3>
+<p>At this time PNG, JPG, and JPEG</p>
+<h2 id="newest-updates"><strong>Newest Updates</strong></h2>
+<p>Check out all the release and code updates <a href="/DepthMapBatch/updates/"><strong>here</strong></a></p>
 
 
 

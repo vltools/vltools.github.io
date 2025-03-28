@@ -176,7 +176,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../overview/" class="md-tabs__link">
+      <a href="../../zForm/overview/" class="md-tabs__link">
         
   
     
@@ -193,7 +193,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../DepthMapBatch/overview/" class="md-tabs__link">
+      <a href="../overview/" class="md-tabs__link">
         
   
     
@@ -274,7 +274,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../../zForm/overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -295,7 +295,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../DepthMapBatch/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -326,107 +326,125 @@
 
 
 <h1 id="updates">Updates</h1>
-<h3 id="v230-03222025">v2.3.0 (03/22/2025)</h3>
-<p>The newest version of zForm is packed with new features and improvements.</p>
+<h3 id="v261-03272025">v2.6.1 (03/27/2025)</h3>
 <ul>
-<li>
-<p><strong>Aesthetic UI Improvements</strong>:<br />
-  The Input Type is now a dropdown, enabling the addition of more input type options in the future, especially for scaling.</p>
-</li>
-<li>
-<p><strong>Deform Mesh</strong>:<br />
-  A new feature in the Mesh Properties section that allows you to bend, twist, taper, and stretch the mesh with several options to give you more control.</p>
-</li>
-<li>
-<p><strong>Texture Properties</strong>:<br />
-  A brand-new section filled with loads of features such as:  </p>
-<ul>
-<li>Control over contrast and brightness of depth maps  </li>
-<li>Presets for quick template adjustments to the mesh  </li>
-<li>Cropping, mapping extension, and color space  </li>
-<li>Depth Map Painting for editing the depth map in Paint mode  </li>
+<li><strong>Fixed 16-bit depth map generation issue:</strong> Resolved a problem affecting GPU processing for different image dimensions. CPU processing remains unchanged.</li>
 </ul>
-</li>
-<li>
-<p><strong>Utility Tools</strong>:<br />
-  A new section at the bottom that includes an <strong>Export Animation</strong> feature, allowing you to export animations as GLB/GLTF files for Video and Directory input types. I’ve also added some basic instructions for exporting a single mesh.</p>
-</li>
-</ul>
-<h3 id="v224-02182025">v2.2.4 (02/18/2025)</h3>
+<h3 id="v260-03262025">v2.6.0 (03/26/2025)</h3>
 <ul>
-<li><strong>Lingering fix with normals:</strong> One more fix to correct facing normals when the background removal feature isn't being used.</li>
+<li><strong>GPU Acceleration Support:</strong> Now available across all operating systems.</li>
 </ul>
-<h3 id="v223-01202025">v2.2.3 (01/20/2025)</h3>
+<h3 id="v255_beta-03042025">v2.5.5_beta (03/04/2025)</h3>
 <ul>
-<li><strong>Another fix for Normal Corrections:</strong> Resolves an issue with normals that occurred after applying all modifiers.</li>
+<li><strong>Introducing Utility Tools – Basic Video Compiler:</strong> Allows video creation from a directory of images.</li>
 </ul>
-<h3 id="v222-01122025">v2.2.2 (01/12/2025)</h3>
+<h3 id="v253_beta-02252025">v2.5.3_beta (02/25/2025)</h3>
 <ul>
-<li><strong>Recalculate Normals:</strong> A fix to recalculate normals after applying all modifiers.</li>
+<li><strong>Fixed Output Type handling in Blender 3.6 (Mac):</strong> New UI for Output Type now functions properly.</li>
 </ul>
-<h3 id="v221-01092025">v2.2.1 (01/09/2025)</h3>
+<h3 id="v252_beta-02202025">v2.5.2_beta (02/20/2025)</h3>
 <ul>
-<li><strong>Handle inverted grayscale images:</strong> Now supports negative Depth Strength values for depth map images with inverted grayscale colors.</li>
+<li><strong>Improved Output Type Functionality:</strong> Redesigned UI for selecting multiple output types or "All Types" with one click.</li>
 </ul>
-<h3 id="v220-01062025">v2.2.0 (01/06/2025)</h3>
+<h3 id="v251-02182025">v2.5.1 (02/18/2025)</h3>
 <ul>
-<li><strong>New Feature to remove entire backside of a mesh:</strong> Allows you to remove the entire backside of a mesh for a clean, smooth cut.</li>
+<li><strong>New Support for Depth Pro:</strong> The required Python library is now included in the "Optional Packages" section in Preferences.</li>
 </ul>
-<h3 id="v209-12262024">v2.0.9 (12/26/2024)</h3>
+<h3 id="v241-02142025">v2.4.1 (02/14/2025)</h3>
 <ul>
-<li><strong>Fixed Normals:</strong> Resolved an issue where normals were flipped immediately after clicking “Apply Depth Map.”</li>
+<li><strong>New Info Message for Depth Map Style:</strong> UI message reminder for render engine settings when using the "16_BIT" option.</li>
 </ul>
-<h3 id="v208-12082024">v2.0.8 (12/08/2024)</h3>
+<h3 id="v240-02122025">v2.4.0 (02/12/2025)</h3>
 <ul>
-<li><strong>"Apply All Modifiers" for Directory:</strong> Fixed an issue where the material would change frame by frame instead of staying static.</li>
-<li><strong>Error Handling for Directory:</strong> Added error handling when some images in a directory didn't have corresponding depth maps.</li>
+<li><strong>Extract Original Frames from Video:</strong> A new Output Type, "Original Frames/Images," extracts frames from video files.</li>
 </ul>
-<h3 id="v207-11272024">v2.0.7 (11/27/2024)</h3>
+<h3 id="v239-01302025">v2.3.9 (01/30/2025)</h3>
 <ul>
-<li><strong>UI improvements:</strong> Added an "Expand All" button to expand or collapse all sections at once.</li>
+<li><strong>Improved Normal Map Quality:</strong> Enhancements for the Output Type option.</li>
 </ul>
-<h3 id="v206-11262024">v2.0.6 (11/26/2024)</h3>
+<h3 id="v237-01262025">v2.3.7 (01/26/2025)</h3>
 <ul>
-<li><strong>UI improvements:</strong> Each main section now includes collapse/expand functionality to keep the interface clean.</li>
+<li><strong>Experimental Depth Mapping Option: Depth Pro:</strong> Test version available for current customers.</li>
 </ul>
-<h3 id="v205-11252024">v2.0.5 (11/25/2024)</h3>
+<h3 id="v236-01242025">v2.3.6 (01/24/2025)</h3>
 <ul>
-<li><strong>Improve file path handling:</strong> Fixed cases where file paths weren't handled correctly.</li>
+<li><strong>Renamed "Image" option to "Image Directory":</strong> Updated terminology in the Input Method section.</li>
 </ul>
-<h3 id="v204-11242024">v2.0.4 (11/24/2024)</h3>
+<h3 id="v235-01082025">v2.3.5 (01/08/2025)</h3>
 <ul>
-<li><strong>Compatible with Blender 4.3:</strong> zForm is now fully compatible with Blender 4.3.</li>
+<li><strong>Added support for all model weights in Depth Anything V2.</strong></li>
 </ul>
-<h3 id="v203-11232024">v2.0.3 (11/23/2024)</h3>
+<h3 id="v234-12312024">v2.3.4 (12/31/2024)</h3>
 <ul>
-<li><strong>Resolved Rotation and Mesh View Issues:</strong> Fixed rotation and mesh view compatibility issues.</li>
-<li><strong>Modular Code Rebuild:</strong> Reorganized and rebuilt the project code for better scalability and future development.</li>
+<li><strong>Expanded model max resolution options:</strong> Now supports 256, 512, 1024, 1100, 1200, 1300, 1400, 1500, and 1600.</li>
 </ul>
-<h3 id="v202-11212024">v2.0.2 (11/21/2024)</h3>
+<h3 id="v233-12262024">v2.3.3 (12/26/2024)</h3>
 <ul>
-<li><strong>Enhanced Handling of Missing Depth Maps:</strong> Added error handling for images missing associated depth maps while still processing images that do.</li>
+<li><strong>Fixed Input Directory handling issue:</strong> Resolved a problem using the Input Directory as the Output Directory path.</li>
 </ul>
-<h3 id="v201-11202024">v2.0.1 (11/20/2024)</h3>
+<h3 id="v232-12242024">v2.3.2 (12/24/2024)</h3>
 <ul>
-<li><strong>New functionality for Video and Image Sequences:</strong> Generate 3D meshes from videos and image sequences. (Full product page updates are in progress.)</li>
+<li><strong>Enhanced Output Path Options:</strong> Allows selecting the Input Directory for the Output Directory path.</li>
 </ul>
-<h3 id="v104-11012024">v1.0.4 (11/01/2024)</h3>
+<h3 id="v231-12132024">v2.3.1 (12/13/2024)</h3>
 <ul>
-<li><strong>Alpha Transparency Support Added:</strong> Implemented support for images with alpha channels (PNG files only).</li>
+<li><strong>New 16-BIT Depth Map Style:</strong> Enables generating 16-bit depth maps.</li>
 </ul>
-<h3 id="v103-10312024">v1.0.3 (10/31/2024)</h3>
+<h3 id="v221-12072024">v2.2.1 (12/07/2024)</h3>
 <ul>
-<li><strong>Solidify Option Added:</strong> Introduced mesh thickness control via a new Solidify modifier, with adjustable thickness from 0 to 10 units (default 0.02).</li>
+<li><strong>Fixed new installation issues and video output of normals.</strong></li>
 </ul>
-<h3 id="v102-10252024">v1.0.2 (10/25/2024)</h3>
+<h3 id="v220-12062024">v2.2.0 (12/06/2024)</h3>
 <ul>
-<li><strong>Stay in your view:</strong> zForm now maintains your preferred mesh view instead of resetting to Front View.</li>
-<li><strong>Increased max Smooth Factor:</strong> Raised the maximum Smooth Factor from 2 to 6.</li>
-<li><strong>Applied rotation and scale:</strong> Automatically applies rotation and scale to the mesh for a smoother workflow.</li>
+<li><strong>Higher Quality Depth Maps:</strong> Added "Max Resolution" options (512, 1024, 1600) and new Model Weights UI.</li>
 </ul>
-<h3 id="v101-10132024">v1.0.1 (10/13/2024)</h3>
+<h3 id="v210-11302024">v2.1.0 (11/30/2024)</h3>
 <ul>
-<li><strong>NEW FEATURE:</strong> Added an option to apply all modifiers within the tool.</li>
+<li><strong>New Path-Saving Feature:</strong> Saves model weights file path and adds compatibility with Blender 4.3.</li>
+</ul>
+<h3 id="v209_beta-11192024">v2.0.9_Beta (11/19/2024)</h3>
+<ul>
+<li><strong>Midas 3.1 Model Fix:</strong> Resolved issues with inconsistent image dimensions.</li>
+</ul>
+<h3 id="v208_beta-11042024">v2.0.8_Beta (11/04/2024)</h3>
+<ul>
+<li><strong>Introduced 16-Bit Depth Map Generation.</strong></li>
+</ul>
+<h3 id="v207-10312024">v2.0.7 (10/31/2024)</h3>
+<ul>
+<li><strong>PNG Export Fix:</strong> Corrected DPI handling for PNG exports.</li>
+</ul>
+<h3 id="v206-10282024">v2.0.6 (10/28/2024)</h3>
+<ul>
+<li><strong>DPI Handling Enhancement:</strong> Improved DPI processing for both JPEGs and PNGs.</li>
+</ul>
+<h3 id="v205-10252024">v2.0.5 (10/25/2024)</h3>
+<ul>
+<li><strong>Alpha Channel Support:</strong> Retains transparency in images.</li>
+</ul>
+<h3 id="v204-10202024">v2.0.4 (10/20/2024)</h3>
+<ul>
+<li><strong>Two new grayscale styles:</strong> "Close White" (white closer) and "Close Black" (black closer).</li>
+</ul>
+<h3 id="v203-10192024">v2.0.3 (10/19/2024)</h3>
+<ul>
+<li><strong>Filename and File Type Updates:</strong> Added <code>_depth</code> to output filenames and automatic renaming to prevent overwriting.</li>
+</ul>
+<h3 id="v202-10192024">v2.0.2 (10/19/2024)</h3>
+<ul>
+<li><strong>Fixed OneDrive Support issue.</strong></li>
+</ul>
+<h3 id="v200-10162024">v2.0.0 (10/16/2024)</h3>
+<ul>
+<li><strong>New Depth Map Models:</strong> Added Depth Anything V2 and Midas 3.1, replacing Midas 3.0.</li>
+</ul>
+<h3 id="v106-10132024">v1.0.6 (10/13/2024)</h3>
+<ul>
+<li><strong>Renamed "Images" Output Type to "Depth Maps".</strong></li>
+</ul>
+<h3 id="v105-10112024">v1.0.5 (10/11/2024)</h3>
+<ul>
+<li><strong>New Feature:</strong> Added a new input method for using a single image.</li>
 </ul>
 
 
