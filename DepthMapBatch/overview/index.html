@@ -347,11 +347,125 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#intro" class="md-nav__link">
+  <a href="#getting-started-guide" class="md-nav__link">
     <span class="md-ellipsis">
-      Intro
+      Getting Started Guide
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#download-model-weights-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download Model Weights Files
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Download Model Weights Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#depth-anything-v2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Depth Anything V2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Depth Anything V2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#depth-anything-v2-small-home-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Depth Anything V2 Small (home page)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depth-anything-v2-base-home-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Depth Anything V2 Base (home page)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depth-anything-v2-large-home-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Depth Anything V2 Large (home page)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#midas" class="md-nav__link">
+    <span class="md-ellipsis">
+      MiDaS
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="MiDaS">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#midas-31-large-home-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      MiDaS 3.1 Large (home page)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#midas-30-large-home-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      MiDaS 3.0 Large (home page)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#depth-pro" class="md-nav__link">
+    <span class="md-ellipsis">
+      Depth Pro
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Depth Pro">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#depth-pro-home-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Depth Pro (home page)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -713,9 +827,44 @@
 
 
 <h1 id="depth-map-batch-dmb-documentation">Depth Map Batch (DMB) Documentation</h1>
-<h2 id="intro"><strong>Intro</strong></h2>
-<p>This page is dedicated to documentation support for Depth Map Batch (DMB), a Blender add-on designed to create depth maps from a batch of images in a specified directory, video file, or a single image using efficient batch processing, and it's run entirely locally on your own machine without relying on external APIs or websites. You also have the ability to generate normal maps, height maps, extract original frames from video files, and a video compiler feature.</p>
-<p>There are currently 4 different depth map models to choose from including Depth Anything V2 (Small, Base, Large), MiDaS 3.1, Depth Pro, and MiDaS 3.0. You also have the ability to generate 16-bit depth maps for 8-bit images, max resolution size options ranging from 256 and up to 1600 if your machine can handle it, maintain DPI settings throughout the generation process, and keep transparency. </p>
+<h2 id="getting-started-guide"><strong>Getting Started Guide</strong></h2>
+<p>As a starting point, here's a quick getting started guide to using Depth Map Batch that covers all the key areas including installation and using key features. If you want to leverage <strong>GPU acceleration</strong>, please see instructions <a href="#install-gpu-packages">here</a>.</p>
+<p><strong>There are four main steps.</strong></p>
+<ol>
+<li>Install the add-on</li>
+<li>Install the Python library packages using the "Install all Packages" button</li>
+<li>Close Blender entirely and re-open</li>
+<li>Download the Model Weights files <a href="#download-model-weights-files">here</a> and store locally in a directory </li>
+</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E4hkXFAte88?si=tGQfrPCPKhb7TZ4v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p>And here's a quick demo of how to generate depth maps. </p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s0vmL0DWwBY?si=5HO4uIx9o55S6O9X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<h2 id="download-model-weights-files">Download Model Weights Files</h2>
+<p>If you have any questions on how to use the model weights files, feel free to message me directly or watch this brief video covering that here.</p>
+<h3 id="depth-anything-v2">Depth Anything V2</h3>
+<h4 id="depth-anything-v2-small-home-page">Depth Anything V2 Small (home page)</h4>
+<p>Download the model weights file in the page below:<br />
+🔗 <strong>URL:</strong> <a href="https://huggingface.co/depth-anything/Depth-Anything-V2-Small/blob/main/depth_anything_v2_vits.pth">https://huggingface.co/depth-anything/Depth-Anything-V2-Small/blob/main/depth_anything_v2_vits.pth</a>  </p>
+<h4 id="depth-anything-v2-base-home-page">Depth Anything V2 Base (home page)</h4>
+<p>Download the model weights file in the page below:<br />
+🔗 <strong>URL:</strong> <a href="https://huggingface.co/depth-anything/Depth-Anything-V2-Base/blob/main/depth_anything_v2_vitb.pth">https://huggingface.co/depth-anything/Depth-Anything-V2-Base/blob/main/depth_anything_v2_vitb.pth</a>  </p>
+<h4 id="depth-anything-v2-large-home-page">Depth Anything V2 Large (home page)</h4>
+<p>Download the model weights file in the page below:<br />
+🔗 <strong>URL:</strong> <a href="https://huggingface.co/depth-anything/Depth-Anything-V2-Large/blob/main/depth_anything_v2_vitl.pth">https://huggingface.co/depth-anything/Depth-Anything-V2-Large/blob/main/depth_anything_v2_vitl.pth</a>  </p>
+<hr />
+<h3 id="midas">MiDaS</h3>
+<h4 id="midas-31-large-home-page">MiDaS 3.1 Large (home page)</h4>
+<p>🔗 <strong>URL:</strong> <a href="https://github.com/isl-org/MiDaS/releases/download/v3_1/dpt_beit_large_512.pt">https://github.com/isl-org/MiDaS/releases/download/v3_1/dpt_beit_large_512.pt</a>  </p>
+<h4 id="midas-30-large-home-page">MiDaS 3.0 Large (home page)</h4>
+<p><em>Rename <code>dpt_large-midas-2f21e586.pt</code> to <code>midas_dpt_large.pth</code> before use.</em><br />
+🔗 <strong>URL:</strong> <a href="https://github.com/intel-isl/DPT/releases/download/1_0/dpt_large-midas-2f21e586.pt">https://github.com/intel-isl/DPT/releases/download/1_0/dpt_large-midas-2f21e586.pt</a>  </p>
+<hr />
+<h3 id="depth-pro">Depth Pro</h3>
+<h4 id="depth-pro-home-page">Depth Pro (home page)</h4>
+<p>🔗 <strong>URL:</strong> <a href="https://ml-site.cdn-apple.com/models/depth-pro/depth_pro.pt">https://ml-site.cdn-apple.com/models/depth-pro/depth_pro.pt</a><br />
+<em>Very large file at almost 2GB</em>  </p>
 <h2 id="video-tutorials"><strong>Video Tutorials</strong></h2>
 <table>
 <thead>
@@ -842,6 +991,8 @@
 <p>I rarely use CLOSE_BLACK, but it's there for those that prefer that objects closest to the camera view are black and those furthest away being white. </p>
 <p><img src="/images/dmb/depth-map-style.jpg" alt="Alt text" width="500"></p>
 <h4 id="model-weights"><strong>Model Weights</strong></h4>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QCJ_SBnRtzA?si=GM2QynwWImEH6_EE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 <p>A critical section. The directory path you choose in this option is where you've placed all of your model weights files. I recommend saving the model weights files in a directory that's easy to remember for future reference.</p>
 <p><img src="/images/dmb/model-weights.jpg" alt="Alt text" width="500"></p>
 <p>Then, once you've specified the directory you can choose which model to use in the dropdown. The only model options displayed are those that you've got model weights files in the directory. </p>
