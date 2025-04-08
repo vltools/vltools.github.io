@@ -578,6 +578,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#create-360-world" class="md-nav__link">
+    <span class="md-ellipsis">
+      Create 360 World
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#apply-all-modifiers" class="md-nav__link">
     <span class="md-ellipsis">
       Apply All Modifiers
@@ -665,6 +674,15 @@
   <a href="#saving-and-working-with-existings-project-files" class="md-nav__link">
     <span class="md-ellipsis">
       Saving and Working with Existings Project Files
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-create-360-degree-world-using-explore-360" class="md-nav__link">
+    <span class="md-ellipsis">
+      How to create 360 degree world using Explore 360
     </span>
   </a>
   
@@ -826,12 +844,8 @@
 
 <p><img src="/images/zform/top-header.jpg" alt="Alt text" width="500"></p>
 <h3 id="input-type"><strong>Input Type</strong></h3>
-<p>Choose which type of input you want to use for the original source. Right now there are three options including Image, Video, and Directory for a sequence of images. </p>
-<p><img src="/images/zform/input-type-image.jpg" alt="Alt text" width="450">
-<br>
-<img src="/images/zform/input-type-video.jpg" alt="Alt text" width="450">
-<br>
-<img src="/images/zform/input-type-directory.jpg" alt="Alt text" width="450"></p>
+<p>Choose which type of input you want to use for the original source. Right now there are four options including Image, Video, Directory for a sequence of images, and Explore 360. </p>
+<p><img src="/images/zform/input-type-options.jpg" alt="Alt text" width="650"></p>
 <p><strong>Image</strong></p>
 <p>Used to work with one single image. </p>
 <p><strong> Video</strong> </p>
@@ -842,6 +856,10 @@
 <p>If you have a directory of images and corresponding depth maps for each image, this is the option you want. This feature will take a directory of images and turn them into a sequence of images in Blender's timeline. The first frame will correspond to the first image in the directory and so on. </p>
 <p>You can simply press the right and left arrow in the timeline to navigate to the next frame. The order of the sequence will be based on alphabetical order of the directory of images. </p>
 <p><u>IMPORTANT</u> When using the Directory input type, each depth map file name needs to match the original image name with "_depth" at the end. That's how the tool is able to match each image to the corresponding depth map. </p>
+<p><strong>Explore 360</strong></p>
+<p>Take a single image and turn it into a 360 degree sphere that you can explore. Move around in 360 degrees, up, down, forward, backward. You can also record using the camera while exploring that can be turned frames for a video. Instructions on how to use this feature can be seen <strong><a href="#how-to-create-360-degree-world-using-explore-360">here.</a></strong></p>
+<p><img src="/images/zform/360-cave.jpg" alt="Alt text" width="650"></p>
+<p><img src="/images/zform/immersive-cave.jpg" alt="Alt text" width="650"></p>
 <h3 id="open"><strong>Open</strong></h3>
 <p>Depending on your input type, this is where to select your original source file(s), not the depth maps. If you chose Image as the input type, the button will say "Open Image", whereas the Video input type would say "Import Video". For the Directory input type it will say "Import Directory", but you only select the directory instead of a specific file.</p>
 <p><img src="/images/zform/open-image.jpg" alt="Alt text" width="300"></p>
@@ -1041,6 +1059,11 @@
 <p>Once you're ready to generate the initial geometry and mesh for the depth map you will click on this button. Because modifiers are non-destructive in nature, you can change any values for fields in the main section of zForm and the mesh will adjust in real-time. </p>
 <p><img src="/images/zform/apply-depth-map.jpg" alt="Alt text" width="300"></p>
 <p>Most of the time I will start out by quickly going to this step to generate the initial mesh, and then afterwards I'll adjust parameters as needed. I find this to be an efficient workflow. Also, I rarely use a Subdivision Level value above 8 on the very first mesh generation because it will slow down performance when making edits. Only at the very end when everything is ready to go that I will consider increasing the sub-division level if my depth map is high enough quality to do so, otherwise I will just leave the subdivision at 8. </p>
+<h3 id="create-360-world"><strong>Create 360 World</strong></h3>
+<p>This button for <strong>Create 360 World</strong> is only usable for the <strong>Explore 360</strong> input type and is used to turn your static flat image into an immersive sphere that can be explored. </p>
+<p><img src="/images/zform/create-360-world.jpg" alt="Alt text" width="700"></p>
+<p>One you click on the button your image should now look something like this if you go into Material Preview mode. </p>
+<p><img src="/images/zform/create-360-world-v2.jpg" alt="Alt text" width="700"></p>
 <h3 id="apply-all-modifiers"><strong>Apply All Modifiers</strong></h3>
 <p>Button to apply all modifiers to the mesh, which will make it destructive and you can't change after unless you undo immediatelly after applying modifiers. This step can be beneficial if you need to do some cleanup or edits to the mesh. </p>
 <p><img src="/images/zform/apply-modifiers.jpg" alt="Alt text" width="300"></p>
@@ -1093,6 +1116,39 @@
 </ol>
 <p>Additional Note for zForm Users:
 When reopening an older project in zForm, please note that the Mesh View option defaults to top view. You may need to adjust this setting manually.</p>
+<h3 id="how-to-create-360-degree-world-using-explore-360"><strong>How to create 360 degree world using Explore 360</strong></h3>
+<p>Here are the steps involved to create a 360 degree world using the input type for <strong>Expore 360</strong>.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8vrrNHJjxYM?si=pvBiRMWFwmr2JWMm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p><strong>Step 1:</strong> In the Input Type dropdown menu at the very top choose <strong>Explore 360</strong> option.</p>
+<p><img src="/images/zform/explore-360-step-1.jpg" alt="Alt text" width="500"></p>
+<p><strong>Step 2:</strong> Click on the Open Image button to import your image and you should see the image imported in as a flat plane object.</p>
+<p><img src="/images/zform/explore-360-step-2.jpg" alt="Alt text" width="500"></p>
+<p><strong>Step 3 (Optional):</strong> This step is option. If you'd like to use a corresponding depth map that matches the original image you can do so here. For this example I'm going to leave empty and adjust any necessary inputs as needed. </p>
+<p><img src="/images/zform/explore-360-step-3.jpg" alt="Alt text" width="500"></p>
+<p><strong>Step 4:</strong> Click on the <strong>Create 360 Degree World</strong> button to create an immersive world for your image.  </p>
+<p><img src="/images/zform/explore-360-step-4.jpg" alt="Alt text" width="500"></p>
+<p><strong>Step 5:</strong> Click on the <strong>Enter Immersive View</strong> button to explore inside of the 360 degree world.  </p>
+<p><img src="/images/zform/explore-360-step-5.jpg" alt="Alt text" width="500"></p>
+<p>You should see something like this. </p>
+<p><img src="/images/zform/explore-360-step-5-1.jpg" alt="Alt text" width="500"></p>
+<p>Now look on the right side for some tips on how to use the keyboard and mouse to navigate around the world. If you simply want to turn around 360 degrees use the mouse or touchpad. For moving up and down use the keys Q and E. And then to move forward and backward use W and S, and for left and right use A and D. </p>
+<p><img src="/images/zform/explore-360-step-5-2.jpg" alt="Alt text" width="500"></p>
+<p>At any time you can click with your mouse or touchpad to stay in place. And if you want to start moving around again click on the <strong>Resume Navigation</strong> button. </p>
+<p><img src="/images/zform/explore-360-step-5-3.jpg" alt="Alt text" width="500"></p>
+<p>Another fun feature when you're inside of the immersive experience for Explore 360 is the ability to record the camera path, which in turn will allow you later on to render frames that can be turned into a video. </p>
+<p>Just click on the <strong>Record Camera Path</strong> button to start recording. </p>
+<p><img src="/images/zform/explore-360-step-5-4.jpg" alt="Alt text" width="500"></p>
+<p>At any time you can click on <strong>Stop Recording</strong> to stop recording. </p>
+<p><img src="/images/zform/explore-360-step-5-5.jpg" alt="Alt text" width="500"></p>
+<p>Afterwards you have the option to play the recorded path by pressing the <strong>Play Recorded Path</strong> button or alternatively at any time you can press space on  your keyboard to play the animation. </p>
+<p><img src="/images/zform/explore-360-step-5-6.jpg" alt="Alt text" width="500"></p>
+<p>Last, but not least once you're ready to exit the immersive experience click on the <strong>Exit Immersive View</strong> button.</p>
+<p><img src="/images/zform/explore-360-step-5-7.jpg" alt="Alt text" width="500"></p>
+<p>And that should take you completely out of the 360 degree world like this. </p>
+<p><img src="/images/zform/explore-360-step-5-8.jpg" alt="Alt text" width="500"></p>
+<p>If you want to try creating a new 360 degree world select the existing one and type in the letter "x" on your keyboard and click on <strong>Delete</strong> and start over using the same steps again.</p>
+<p><img src="/images/zform/explore-360-step-5-9.jpg" alt="Alt text" width="500"></p>
 <h2 id="current-issues"><strong>Current Issues</strong></h2>
 <ul>
 <li>In Paint Mode for the Video input type, the Reset feature in Texture Properties isn't functioning correctly for specific frames. It will handle painting just fine for each frame, but resetting a the texture specific frame th</li>
