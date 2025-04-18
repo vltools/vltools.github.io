@@ -622,17 +622,17 @@
           <li class="md-nav__item">
   <a href="#slice-tool" class="md-nav__link">
     <span class="md-ellipsis">
-      ✂️ Slice Tool
+      Slice Tool
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="✂️ Slice Tool">
+    <nav class="md-nav" aria-label="Slice Tool">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#features" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 Features
+      Features
     </span>
   </a>
   
@@ -641,7 +641,7 @@
           <li class="md-nav__item">
   <a href="#how-to-use" class="md-nav__link">
     <span class="md-ellipsis">
-      🪜 How to Use
+      How to Use
     </span>
   </a>
   
@@ -650,7 +650,7 @@
           <li class="md-nav__item">
   <a href="#tips" class="md-nav__link">
     <span class="md-ellipsis">
-      💡 Tips
+      Tips
     </span>
   </a>
   
@@ -1126,19 +1126,19 @@
 <p><img src="/images/zform/step-2-export-animation.jpg" alt="Alt text" width="500"></p>
 <p>That's it! After the process is complete you should the file in the specified directory. For testing purposes you can drag the newly exported file back into Blender and see if it works by playing the animation in Blender's timeline. </p>
 <p><u>IMPORTANT:</u> At this time, the feature cannot export each frame's material, but you should be able to re-assign each frame's material back after you import the GLB/GLTF file into another platform. I've successfully tested this importing back into Blender and re-assigning the materials that way...but I haven't tested on other platforms. It's a limitation with using the GLB/GLTF format. Only the first frame's material is exported. I hope to have an improved solution to pack each frame's materials into the exported file, but currently that isn't possible. </p>
-<h3 id="slice-tool">✂️ Slice Tool</h3>
-<p>The <strong>Slice Tool</strong> lets you cut your 3D model into multiple horizontal or vertical pieces—great for effects like <strong>laser engravings</strong>, <strong>cross-sections</strong>, or prepping models for layered exports.</p>
-<p>This feature is designed to be simple to use with flexible options for how your object is sliced.</p>
-<hr />
-<h4 id="features">🚀 Features</h4>
+<h3 id="slice-tool">Slice Tool</h3>
+<p>The <strong>Slice Tool</strong> lets you cut your 3D model into multiple horizontal or vertical pieces that can be useful for things like laser engravings, cross-sections, or prepping models for layered exports.</p>
+<p><img src="/images/zform/slice.jpg" alt="Alt text" width="500"></p>
+<p><img src="/images/zform/slice-2.jpg" alt="Alt text" width="500"></p>
+<p><img src="/images/zform/slice-4.jpg" alt="Alt text" width="500"></p>
+<h4 id="features">Features</h4>
 <ul>
-<li>✅ <strong>Slice in any direction</strong> — X, Y, or Z axis  </li>
-<li>🛠️ <strong>Laser Mode</strong> — Create thin “engraving-like” slices with optional flattening  </li>
-<li>📏 <strong>Auto or Manual Slicing</strong> — Choose how many slices you want, or specify a single exact slice height  </li>
-<li>🧼 <strong>Clean Results</strong> — The original object is hidden, and all slices are named automatically  </li>
+<li><strong>Slice in any direction</strong> — X, Y, or Z axis  </li>
+<li><strong>Laser Mode</strong> — Create thin “engraving-like” slices with optional flattening  </li>
+<li><strong>Auto or Manual Slicing</strong> — Choose how many slices you want, or specify a single exact slice height  </li>
+<li><strong>Clean Results</strong> — The original object is hidden, and all slices are named automatically  </li>
 </ul>
-<hr />
-<h4 id="how-to-use">🪜 How to Use</h4>
+<h4 id="how-to-use">How to Use</h4>
 <ol>
 <li>
 <p><strong>Select a Mesh Object</strong><br />
@@ -1146,30 +1146,29 @@
 </li>
 <li>
 <p><strong>Open the Slice Tool Panel</strong><br />
-   Go to the <code>zForm</code> panel and find the <strong>Slice Tool</strong> section.</p>
+   Go to the <code>Utility Tools</code> section and expand out <strong>Slice</strong>.</p>
 </li>
 <li>
 <p><strong>Adjust Your Settings</strong>  </p>
 </li>
-<li>✅ Toggle <strong>Laser Mode</strong> (optional)</li>
-<li>🔁 Choose the slicing <strong>axis</strong> (X, Y, or Z)</li>
-<li>🧮 Choose number of slices, or enable “specific height” for one precise cut</li>
+<li>Toggle <strong>Laser Engraving Mode</strong> (optional)</li>
+<li>Choose the slicing <strong>axis</strong> (X, Y, or Z)</li>
+<li>Choose number of slices, or enable “specific height” for one precise cut</li>
 <li>
-<p>📉 (Optional) Flatten slices if using Laser Mode</p>
+<p>(Optional) Flatten slices if using Laser Mode</p>
 </li>
 <li>
 <p><strong>Click "Slice Object"</strong><br />
    Sliced duplicates will be created based on your settings. The original will be hidden automatically.</p>
 </li>
 </ol>
-<hr />
-<h4 id="tips">💡 Tips</h4>
-<p>!!! tip
-    - Use <strong>Laser Mode</strong> for thin slices that mimic engraving layers.
-    - Use <strong>Standard Mode</strong> to break up models into chunks or layers.
-    - Flattened slices are useful for generating heightmaps or laser-style lines.
-    - Choose <strong>X</strong>, <strong>Y</strong>, or <strong>Z</strong> slicing based on how your object is oriented.</p>
-<hr />
+<h4 id="tips">Tips</h4>
+<ul>
+<li>Use <strong>Laser Mode</strong> for thin slices that mimic engraving layers.</li>
+<li>Use <strong>Standard Mode</strong> to break up models into chunks or layers.</li>
+<li>Flattened slices are useful for generating heightmaps or laser-style lines.</li>
+<li>Choose <strong>X</strong>, <strong>Y</strong>, or <strong>Z</strong> slicing based on how your object is oriented.</li>
+</ul>
 <h2 id="tips-and-tricks">Tips and Tricks</h2>
 <h3 id="my-typical-workflow">My Typical Workflow</h3>
 <p>I begin by expanding all the sections using the expand/collapse feature at the very top right and selecting my Input Type. Then I load the source—whether it's an image, video, or directory—and provide the corresponding depth map under Main Inputs, and change the Mesh View if necessary.</p>
